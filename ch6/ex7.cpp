@@ -1,11 +1,8 @@
-// #include <algorithm>
 #include <cctype>
 #include <iostream>
 #include <string>
 
 using namespace std;
-
-// const char vowels[] = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'};
 
 bool is_word(const string& w);
 
