@@ -10,8 +10,6 @@ struct bop {
   int preference;
 };
 const int ArrLen = 3;
-const int validLen = 5;
-const char valid[validLen] = {'a', 'b', 'c', 'd', 'q'};
 
 void display(const bop*);
 
