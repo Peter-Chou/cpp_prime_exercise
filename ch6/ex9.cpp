@@ -89,24 +89,4 @@ void display(const patron* arr, const int len, bool saveToFile) {
       outFile << "None\n";
     }
   }
-
-  // if (saveToFile) {  // save to file if true
-  //   outFile << "Grand Patrons:\n";
-  //   for (int i = 0; i < len; i++) {
-  //     if (arr[i].donation >= GRAND) {
-  //       outFile << "Name: " << arr[i].name << "\t\tdonated: $"
-  //               << arr[i].donation << endl;
-  //     }
-  //   }
-  //   outFile << "Patrons:\n";
-  //   if (dq.size() > 0) {
-  //     for (int i = 0; i < dq.size(); i++) {
-  //       outFile << "Name: " << dq[i].name << "\t\tdonated: $" <<
-  //       dq[i].donation
-  //               << endl;
-  //     }
-  //   } else {
-  //     outFile << "None\n";
-  //   }
-  // }
 }
