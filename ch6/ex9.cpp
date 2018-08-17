@@ -9,7 +9,7 @@ using namespace std;
 static ifstream inFile;
 static ofstream outFile;
 const string filename = "contributors.txt";
-const string outName = "ex9.txt";
+const string outName = "ex9_output.txt";
 
 struct patron {
   string name;
