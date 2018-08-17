@@ -6,7 +6,7 @@ using namespace std;
 double harmonic_mean(const double x, const double y);
 
 int main() {
-  double x, y, res;
+  double x, y;
   cout << "Please enter two numbers (neither should be 0):\n";
   while (cin >> x >> y && x != 0 && y != 0) {
     cout << "the harmonic mean of " << x << " and " << y
