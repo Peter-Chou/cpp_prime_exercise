@@ -55,40 +55,58 @@ void set_array(patron* arr, const int len) {
 void display(const patron* arr, const int len, bool saveToFile) {
   deque<patron> dq;
   cout << "Grand Patrons:\n";
+  if (saveToFile) {
+    outFile << "Grand Patrons:\n";
+  }
   for (int i = 0; i < len; i++) {
     if (arr[i].donation >= GRAND) {
       cout << "Name: " << arr[i].name << "\t\tdonated: $" << arr[i].donation
            << endl;
+      if (saveToFile) {
+        outFile << "Name: " << arr[i].name << "\t\tdonated: $"
+                << arr[i].donation << endl;
+      }
     } else {
       dq.push_back(arr[i]);
     }
   }
   cout << "Patrons:\n";
+  if (saveToFile) {
+    outFile << "Patrons:\n";
+  }
   if (dq.size() > 0) {
     for (int i = 0; i < dq.size(); i++) {
       cout << "Name: " << dq[i].name << "\t\tdonated: $" << dq[i].donation
            << endl;
-    }
-  } else {
-    cout << "None\n";
-  }
-
-  if (saveToFile) {  // save to file if true
-    outFile << "Grand Patrons:\n";
-    for (int i = 0; i < len; i++) {
-      if (arr[i].donation >= GRAND) {
-        outFile << "Name: " << arr[i].name << "\t\tdonated: $"
-                << arr[i].donation << endl;
-      }
-    }
-    outFile << "Patrons:\n";
-    if (dq.size() > 0) {
-      for (int i = 0; i < dq.size(); i++) {
+      if (saveToFile) {
         outFile << "Name: " << dq[i].name << "\t\tdonated: $" << dq[i].donation
                 << endl;
       }
-    } else {
+    }
+  } else {
+    cout << "None\n";
+    if (saveToFile) {
       outFile << "None\n";
     }
   }
+
+  // if (saveToFile) {  // save to file if true
+  //   outFile << "Grand Patrons:\n";
+  //   for (int i = 0; i < len; i++) {
+  //     if (arr[i].donation >= GRAND) {
+  //       outFile << "Name: " << arr[i].name << "\t\tdonated: $"
+  //               << arr[i].donation << endl;
+  //     }
+  //   }
+  //   outFile << "Patrons:\n";
+  //   if (dq.size() > 0) {
+  //     for (int i = 0; i < dq.size(); i++) {
+  //       outFile << "Name: " << dq[i].name << "\t\tdonated: $" <<
+  //       dq[i].donation
+  //               << endl;
+  //     }
+  //   } else {
+  //     outFile << "None\n";
+  //   }
+  // }
 }
