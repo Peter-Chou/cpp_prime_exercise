@@ -8,23 +8,10 @@ struct student {
   char hobby[SLEN];
   int ooplevel;
 };
-// getinfo() has two arguments: a pointer to the first element of
-// an array of student structures and an int representing the
-// number of elements of the array. The function solicits and
-// stores data about students. It terminates input upon filling
-// the array or upon encountering a blank line for the student
-// name. The function returns the actual number of array elements
-// filled.
+
 int getinfo(student pa[], int n);
-// display1() takes a student structure as an argument
-// and displays its contents
 void display1(student st);
-// display2() takes the address of student structure as an
-// argument and displays the structure’s contents
 void display2(const student* ps);
-// display3() takes the address of the first element of an array
-// of student structures and the number of array elements as
-// arguments and displays the contents of the structures
 void display3(const student pa[], int n);
 
 int main() {
