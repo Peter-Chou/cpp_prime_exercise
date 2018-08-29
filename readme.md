@@ -19,7 +19,7 @@
 - [ ] ch12 : Classes and Dynamic Memory Allocation
 - [ ] ch13 : Class Inheritance
 
-## STAGE III: optional (A little overkill for daily usage)
+## OPTIONAL (a little overkill for daily usage)
 
 - [ ] ch14 : Reusing Code in C++
 - [ ] ch15 : Friends, Exceptions, and More
