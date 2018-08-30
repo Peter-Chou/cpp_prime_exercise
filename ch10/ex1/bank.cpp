@@ -24,11 +24,10 @@ bool Bank::deposit(double num) {
 
 bool Bank::withdraw(double num) {
   if (num < 0.0) {
-    std::cout << "can't deposit money can't be negative\n";
+    std::cout << "withdraw money can't be negative\n";
     return false;
   } else if (num > balance) {
-    std::cout << "you only have $" << balance << ", can't withdraw $" << num
-              << std::endl;
+    std::cout << "you only have $" << balance << ", can't withdraw $" << num;
     return false;
   } else {
     balance -= num;

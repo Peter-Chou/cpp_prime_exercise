@@ -7,6 +7,10 @@ int main() {
   Bank test("test account", "123456", 5000);
   test.display();
   std::cout << std::endl;
+  std::cout << "Attempting to deposit $-500\n";
+  test.deposit(-500);
+  test.display();
+  std::cout << std::endl;
   std::cout << "Attempting to deposit $500\n";
   test.deposit(500);
   test.display();
