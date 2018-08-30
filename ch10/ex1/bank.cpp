@@ -15,7 +15,7 @@ Bank::Bank(const char* n, const char* a, double num) {
 
 bool Bank::deposit(double num) {
   if (num < 0.0) {
-    std::cout << "can't deposit money can't be negative\n";
+    std::cout << "deposit money can't be negative\n";
     return false;
   }
   balance += num;
