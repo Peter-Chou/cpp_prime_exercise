@@ -2,11 +2,10 @@
 #include <algorithm>
 #include <iostream>
 
-using SALES::Sales;
 using std::cin;
 using std::cout;
 
-Sales::Sales(const double* ar, int n) {
+SALES::Sales::Sales(const double* ar, int n) {
   int i;
   double total = 0.0;
   for (i = 0; i < QUARTERS; i++) {
@@ -22,7 +21,7 @@ Sales::Sales(const double* ar, int n) {
   max = *std::max_element(sales, sales + QUARTERS);
 }
 
-Sales::Sales() {
+SALES::Sales::Sales() {
   double arr[QUARTERS];
   for (int i = 0; i < QUARTERS; i++) {
     cout << "Please enter quarter " << i + 1 << "sales: $";
@@ -32,7 +31,7 @@ Sales::Sales() {
   *this = tmp;
 }
 
-void Sales::show() const {
+void SALES::Sales::show() const {
   for (int i = 0; i < QUARTERS; i++) {
     cout << "quarter " << i + 1 << " sales: $" << sales[i] << std::endl;
   }
