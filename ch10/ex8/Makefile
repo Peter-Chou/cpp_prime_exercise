@@ -4,7 +4,6 @@ list: $(OBJ)
 	g++ -o $@ $(OBJ)
 	@rm *.o
 main.o: list.h
-# list.o: list.h
 
 .PHONY: clean cleanobj
 
