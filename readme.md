@@ -14,7 +14,7 @@
 
 ## STAGE II: object oriented programming (WIP)
 
-- [ ] ch10 : Objects and Classes
+- [x] ch10 : Objects and Classes
 - [ ] ch11 : Working with Classes
 - [ ] ch12 : Classes and Dynamic Memory Allocation
 - [ ] ch13 : Class Inheritance
