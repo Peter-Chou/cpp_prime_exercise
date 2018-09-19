@@ -3,10 +3,8 @@
 #include <iostream>
 
 class Stonewt {
- public:
-  enum class Mode { POS, STN };
-
  private:
+  enum class Mode { POS, STN };
   static const int lbs_per_stn = 14;
   Mode mode;
   double pounds;
