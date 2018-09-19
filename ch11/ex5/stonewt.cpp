@@ -14,13 +14,13 @@ Stonewt::Stonewt() {
   pounds = 0.0;
 }
 
-Stonewt Stonewt::operator+(const Stonewt s) const {
+Stonewt Stonewt::operator+(const Stonewt& s) const {
   Stonewt temp;
   temp.pounds = pounds + s.pounds;
   return temp;
 }
 
-Stonewt Stonewt::operator-(const Stonewt s) const {
+Stonewt Stonewt::operator-(const Stonewt& s) const {
   Stonewt temp;
   temp.pounds = pounds - s.pounds;
   return temp;
@@ -32,12 +32,12 @@ Stonewt Stonewt::operator*(const double i) const {
   return temp;
 }
 
-std::ostream& operator<<(std::ostream& os, const Stonewt& st) {
-  if (st.mode == Stonewt::Mode::POS) {
-    os << "pounds: " << st.pounds;
+std::ostream& operator<<(std::ostream& os, const Stonewt& s) {
+  if (s.mode == Stonewt::Mode::POS) {
+    os << "pounds: " << s.pounds;
   } else {
-    os << "stone: " << static_cast<int>(st.pounds) / Stonewt::lbs_per_stn
-       << "\tpounds left: " << st.pounds - static_cast<int>(st.pounds);
+    os << "stone: " << static_cast<int>(s.pounds) / Stonewt::lbs_per_stn
+       << "\tpounds left: " << s.pounds - static_cast<int>(s.pounds);
   }
   return os;
 }

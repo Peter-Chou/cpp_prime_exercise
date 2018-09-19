@@ -17,8 +17,8 @@ class Stonewt {
   void toPos() { mode = Mode::POS; }
   void toStn() { mode = Mode::STN; }
   // operator overloading
-  Stonewt operator+(const Stonewt s) const;
-  Stonewt operator-(const Stonewt s) const;
+  Stonewt operator+(const Stonewt& s) const;
+  Stonewt operator-(const Stonewt& s) const;
   Stonewt operator*(const double i) const;
   // friend function
   friend Stonewt operator*(const double i, const Stonewt& s) { return s * i; }
