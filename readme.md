@@ -16,7 +16,7 @@
 
 - [x] ch10 : Objects and Classes
 - [x] ch11 : Working with Classes
-- [ ] ch12 : Classes and Dynamic Memory Allocation
+- [x] ch12 : Classes and Dynamic Memory Allocation
 - [ ] ch13 : Class Inheritance
 - [ ] ch14 : Reusing Code in C++
 
