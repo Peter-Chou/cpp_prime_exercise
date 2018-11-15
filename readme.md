@@ -20,7 +20,7 @@
 - [ ] ch13 : Class Inheritance
 - [ ] ch14 : Reusing Code in C++
 
-## OPTIONAL: (a little overkill for daily usage)
+## OPTIONAL:
 
 - [ ] ch15 : Friends, Exceptions, and More
 - [ ] ch16 : The string class and the Standard Template Library
